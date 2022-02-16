@@ -21,6 +21,23 @@ main {
   box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
 }
+main .image-container {
+  width: 100%;
+  height: max-content;
+}
+.image-container .bg-pattern {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+.image-container .woman {
+  position: absolute;
+  left: -5%;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: -3%;
+}
 main .accordion {
   padding: 1rem 1.5rem 3rem 1.5rem;
 }
