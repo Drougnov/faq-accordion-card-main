@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  color: hsl(240, 6%, 50%);
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-size: 0.75rem;
+  font-family: "Kumbh Sans", sans-serif;
+  display: grid;
+  gap: 3rem;
+  place-items: center;
+  padding: 5rem 1.5rem 1.5rem 2rem;
+}
+main {
+  width: 100%;
+  background: white;
+  box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+main .accordion {
+  padding: 1rem 1.5rem 3rem 1.5rem;
+}
+.accordion h1 {
+  color: hsl(238, 29%, 16%);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+details {
+  padding: 1rem 0;
+}
+details > summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+details > summary:hover {
+  color: hsl(14, 88%, 65%);
+}
+details[open] summary {
+  font-weight: 700;
+  color: hsl(237, 12%, 33%);
+  font-size: 0.8rem;
+}
+details[open] summary ~ * {
+  animation: sweep 0.3s linear;
+}
+details p {
+  margin-right: 1rem;
+}
+@keyframes sweep {
+  0% {
+    transform: translateY(-1rem);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+details summary > img {
+  transition: all 0.3s linear;
+}
+details[open] summary > img {
+  transform: rotate(180deg);
+}
+details > summary::marker {
+  display: none;
+}
+details p {
+  margin-top: 1rem;
+}
