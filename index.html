@@ -6,69 +6,60 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | FAQ Accordion Card</title>
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  <main>
-    <div class="image-container">
-      <img src="./images/bg-pattern-mobile.svg" alt="background pattern" class="bg-pattern">
-      <!-- <img src="./images/illustration-box-desktop.svg" alt="an illustration of a box" class="box"> -->
-      <img src="./images/illustration-woman-online-mobile.svg" alt="an online active woman" class="woman">
+  <main class="container">
+    <div class="container__image">
+      <picture>
+        <source media="(min-width: 650px)" srcset="./images/illustration-woman-online-desktop.svg">
+        <img src="./images/illustration-woman-online-mobile.svg" alt="" class="woman">
+      </picture>
+      <img src="./images/illustration-box-desktop.svg" alt="" class="box">
     </div>
-    <div class="accordion">
+    <section class="container__accordion">
       <h1>FAQ</h1>
-      <div class="faq-section">
+      <div class="accordion">
         <details>
           <summary>
-            <span>How many team members can I invite?</span>
-            <img src="./images/icon-arrow-down.svg" alt="arrow icon">
+            <p>How many team members can I invite?</p>
+            <img src="./images/icon-arrow-down.svg" alt="arrow">
           </summary>
           <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
         </details>
-        <hr>
         <details>
           <summary>
-            <span>What is the maximum file upload size?</span>
-            <img src="./images/icon-arrow-down.svg" alt="arrow icon">
+            <p>What is the maximum file upload size?</p>
+            <img src="./images/icon-arrow-down.svg" alt="arrow">
           </summary>
           <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
         </details>
-        <hr>
         <details>
           <summary>
-            <span>How do I reset my password?</span>
-            <img src="./images/icon-arrow-down.svg" alt="arrow icon">
+            <p>How do I reset my password?</p>
+            <img src="./images/icon-arrow-down.svg" alt="arrow">
           </summary>
           <p>Click "Forgot password" from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
         </details>
-        <hr>
         <details>
           <summary>
-            <span>Can I cancel my subscription?</span>
-            <img src="./images/icon-arrow-down.svg" alt="arrow icon">
+            <p>Can I cancel my subscription?</p>
+            <img src="./images/icon-arrow-down.svg" alt="arrow">
           </summary>
           <p>Yes! Send us a message and we'll process your request no questions asked.</p>
         </details>
-        <hr>
         <details>
           <summary>
-            <span>Do you provide additional support?</span>
-            <img src="./images/icon-arrow-down.svg" alt="arrow icon">
+            <p>Do you provide additional support?</p>
+            <img src="./images/icon-arrow-down.svg" alt="arrow">
           </summary>
           <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
         </details>
-        <hr>
       </div>
-    </div>
+    </section>
   </main>
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Biplob Barua Rocky</a>.
-    </p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+      Coded by <a href="https://www.facebook.com/ANT1D0t35" target="_blank" rel="noopener">Biplob Barua Rocky</a>.
   </footer>
   <script src="app.js"></script>
 </body>
