@@ -22,6 +22,8 @@ body{
 }
 .container{ 
   background: white;
+  display: flex;
+  flex-direction: column;
   border-radius: 1.5rem;
   -webkit-border-radius: 1.5rem;
   -moz-border-radius: 1.5rem;
@@ -29,7 +31,27 @@ body{
   -o-border-radius: 1.5rem;
   box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, 0.2);
   margin: 1.5rem;
-  margin-top: 7rem;
+  margin-top: 10rem;
+}
+.container__image{
+  height: 100px;
+  background: url(./images/bg-pattern-mobile.svg) no-repeat;
+  background-position: center bottom;
+  position: relative;
+}
+.container__image picture img{
+  position: absolute;
+  top: -107px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  object-fit: none;
+  object-position: 145% top;
+}
+.box{
+  display: none;
 }
 .container__accordion{
   padding: 1.5rem;
@@ -42,12 +64,15 @@ body{
 }
 .accordion details summary{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
 }
 details .question{
   font-size: .813rem;
+}
+details .arrow{
+  margin-top: .35rem;
 }
 details[open] .question{
   font-weight: 700;
