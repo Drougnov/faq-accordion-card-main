@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: yet to add
+- Solution URL: [https://www.frontendmentor.io/solutions/faq-accordion-card-solution-mobile-first-responsive-x14KwvQHDy](https://www.frontendmentor.io/solutions/faq-accordion-card-solution-mobile-first-responsive-x14KwvQHDy)
 - Live Site URL: [https://drougnov.github.io/faq-accordion-card-main/](https://drougnov.github.io/faq-accordion-card-main/)
 
 ## My process
